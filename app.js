@@ -6,7 +6,7 @@
 
 $(function() {
     // Changes background color
-    setInterval(updateGradient, 10);
+    // setInterval(updateGradient, 10);
 
     // For top contact menu
     $(".trigger").click(function() {
