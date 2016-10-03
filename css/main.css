@@ -1,4 +1,4 @@
-    html {
+html {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     top: 0;
@@ -17,7 +17,6 @@ body {
 .wrapper {
     width: 70%;
     margin-left:15%;
-/*    display: flex;*/
     flex-direction: row;
     align-items: center;
     -webkit-justify-content: center;
@@ -30,18 +29,16 @@ body {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
+    border-radius: 2rem;
     flex-grow: 1;
     height: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-    color: black;
+    color: white;
     display: inline-block;
-    background: #e05252;
-    border: 2px solid #FAFAFA;
-    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-    margin: 0 2px 15px;
+    border-left: 2px dotted white;
     padding: 15px;
     padding-bottom: 5px;
+    margin-top:-5%;
+    margin-bottom:5%;
     opacity: 0.5;
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
@@ -51,15 +48,14 @@ body {
 
 .pin img {
     width: 100%;
-    border-bottom: 1px solid #ccc;
     padding-bottom: 15px;
     margin-bottom: 5px;
 }
 
 .pin p {
     font: 12px/18px Arial, sans-serif;
-    color: #333;
     margin: 0;
+    visibility: hidden;
 }
 
 .pin:hover {
@@ -139,15 +135,6 @@ body {
     box-shadow:0 0 50px tomato,0 0 30px orange, inset 0 10px 10px 20px #ddd, inset 30px 0 35px 50px #ccc;
     background:#aaa;
 }
-
-/*@-webkit-keyframes neon1 {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
-    }
-    to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
-    }
-}*/
 
 .menu .rotater {
     position: absolute;
@@ -250,9 +237,6 @@ body {
     margin-top: -3%;
     margin-bottom: 2%;
 }
-
-
-/*Close buttons for clicked on icons*/
 
 #fa-times-aboutMe,
 #fa-times-portfolio-closeButton {
