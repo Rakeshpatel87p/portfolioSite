@@ -16,13 +16,13 @@ body {
 
 .wrapper {
     width: 70%;
-    margin-left:15%;
+    margin-left: 15%;
     flex-direction: row;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-    padding-bottom:1%;
-    display:none;
+    padding-bottom: 1%;
+    display: none;
 }
 
 .pin {
@@ -37,8 +37,8 @@ body {
     border-left: 2px dotted white;
     padding: 15px;
     padding-bottom: 5px;
-    margin-top:-5%;
-    margin-bottom:5%;
+    margin-top: -13%;
+    margin-bottom: 5%;
     opacity: 0.5;
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
@@ -66,7 +66,6 @@ body {
 .menu,
 .menu .btn .fa {
     position: absolute;
-    /*  top: 50%;*/
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
@@ -107,7 +106,7 @@ body {
 
 .menu .btn:hover .fa {
     opacity: 1;
-    /*color: rgba(255, 255, 255, 0.7);*/
+
 }
 
 .btn-icon:hover {
@@ -116,10 +115,8 @@ body {
 }
 
 .menu .btn.trigger {
-/*    box-shadow: 1px 1px 1px 1px yellow;
-*/    
-    box-shadow:0 0 50px gold,0 0 150px gold, inset 0 20px 20px 40px orange, inset 30px 0 35px 50px ivory;
-    transition:1s;
+    box-shadow: 0 0 50px gold, 0 0 150px gold, inset 0 20px 20px 40px orange, inset 30px 0 35px 50px ivory;
+    transition: 1s;
     opacity: 1;
     z-index: 100;
     cursor: pointer;
@@ -132,8 +129,8 @@ body {
 .menu .btn.trigger:hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
-    box-shadow:0 0 50px tomato,0 0 30px orange, inset 0 10px 10px 20px #ddd, inset 30px 0 35px 50px #ccc;
-    background:#aaa;
+    box-shadow: 0 0 50px tomato, 0 0 30px orange, inset 0 10px 10px 20px #ddd, inset 30px 0 35px 50px #ccc;
+    background: #aaa;
 }
 
 .menu .rotater {
@@ -207,7 +204,6 @@ body {
 
 .rotationEffectOne {
     transform: rotateY(360deg)
-    
 }
 
 .nameDefault {
@@ -222,7 +218,8 @@ body {
     display: table;
     margin: 0 auto;
     color: white;
-    /*    background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+/*Really cool background-coloring effect: */
+/*  background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
     line-height: 120px;
@@ -230,8 +227,6 @@ body {
 
 #jobTitle {
     font-family: 'Rochester', cursive;
-    /*    -webkit-text-stroke: 0.1px #e05252;
-*/
     color: #e05252;
     font-size: 45px;
     margin-top: -3%;
@@ -279,7 +274,6 @@ body {
 .circle {
     transition-property: border, transform;
     margin: 2%;
-    margin-top: 8%;
     transition: box-shadow 1s ease-out;
     box-shadow: none;
 }
@@ -307,7 +301,7 @@ body {
 
 .circle > h3 {
     margin-top: -7%;
-    padding:48% 0 41% 0;
+    padding: 48% 0 41% 0;
 }
 
 .aboutMeLink {
@@ -327,8 +321,8 @@ body {
 
 .aboutMeBlurb {
     font-size: 19px;
-    margin-bottom:-2%;
-    margin-top:-2%;
+    margin-bottom: -2%;
+    margin-top: -2%;
 }
 
 .aboutMePartI,
@@ -411,7 +405,22 @@ body {
     border-radius: 2rem;
 }
 
-@media screen and (min-width: 712px) {
+@media screen and (max-width: 512px) {
+    .circle {
+        margin-top: 14%;
+    }
+    
+    .pin {
+        opacity: 1;
+    }
+
+    .pin p {
+        visibility: visible;
+    }
+
+}
+
+@media screen and (min-width: 771px) {
     #columns {
         -webkit-column-count: 2;
         -moz-column-count: 2;
@@ -424,7 +433,7 @@ body {
     #jobTitle {
         font-size: 62px;
         margin-top: -1%;
-        margin-bottom:4%;
+        margin-bottom: 4%;
     }
     .circle {
         margin: 0% 2% 2% 2%;
@@ -443,9 +452,7 @@ body {
         margin-left: 25%;
         margin-top: 2%;
     }
-    .portfolioImages > img {
-        /*width: 30%;*/
-    }
     .socialIconsList {
         margin-left: 8%;
     }
+}
