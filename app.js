@@ -1,16 +1,17 @@
 $(function() {
     $(window).resize();
     // Changes background color
-    // setInterval(updateGradient, 10);
+    setInterval(updateGradient, 10);
 
     // For top contact menu
     $(".trigger").click(function() {
         $(".menu").toggleClass("active");
-        $('.nameDefault').animate({ 'padding-top': '11%' }, 1000,
-            function() {
-                $('.nameDefault').animate({ 'padding-top': '11%' }, 5000);
-                $(".menu").toggleClass("active");
-            }
+        $('.nameDefault').animate({ 'padding-top': '11%' }, 1000
+            // ,
+            // function() {
+            //     $('.nameDefault').animate({ 'padding-top': '11%' }, 5000);
+            //     $(".menu").toggleClass("active");
+            // }
         )
     });
 
@@ -74,14 +75,14 @@ $(function() {
         $('.circle').addClass('rotationEffectOne');
         $('.aboutMeBlurb').children().fadeOut(1000);
         $('.wrapper').css('display', 'flex');
-        $(".trigger").click(function() {
-            $('.nameDefault')
-            .delay(2000)
-            .animate({'padding-top': '5%'}, 1000)
-            // .queue(function(){
-            //     $(this).animate({'padding-top': '5%'}, 1000);
-            // });            
-        })
+        // $(".trigger").click(function() {
+        //     $('.nameDefault')
+        //     .delay(2000)
+        //     .animate({'padding-top': '5%'}, 1000)
+        //     // .queue(function(){
+        //     //     $(this).animate({'padding-top': '5%'}, 1000);
+        //     // });            
+        // })
     });
 
     $('.pin').hover(function() {
