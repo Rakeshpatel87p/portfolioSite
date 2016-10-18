@@ -1,0 +1,88 @@
+* {
+    font-family: 'Cormorant Garamond', serif;
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 67px;
+    padding-top: 2%;
+}
+
+.topContainer {
+    background-image: url('images/screenshot.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin: 0 8%;
+    border-radius: 2rem;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 4%;
+}
+
+.contentContainer {
+    text-align: center;
+    width: 78%;
+    padding: 5% 0% 4% 12%;
+}
+
+.contentContainer p {
+    border: 1px dotted black;
+    padding: 6%;
+    border-radius: 2rem;
+    font-size: 25px;
+}
+
+.demoButton {
+    padding: 5% 26% 15% 26%;
+}
+
+.demoButton p {
+    background-color: #87CEFA;
+    padding: 8%;
+    text-align: center;
+    color: black;
+}
+
+.demoButton a {
+    text-decoration: none
+}
+
+.demoButton a:visited {
+    color: inherit;
+}
+
+.demoButton p:hover {
+    cursor: pointer;
+    background-color: #cefa87;
+    transition: 0.7s;
+}
+
+@media only screen and (min-width:850px) and (min-device-width: 850px) {
+    .title {
+        font-size: 67px;
+    }
+    .tagline {
+        padding-bottom: 3%;
+    }
+
+    .topContainer {
+        height: 600px;
+    }
+
+    .contentContainer {
+        font-size: 20px;
+    }
+
+    .demoButton {
+        padding: 0 42%;
+        padding-bottom: 4%;
+    }
+}

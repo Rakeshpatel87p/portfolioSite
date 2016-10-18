@@ -1,0 +1,161 @@
+* {
+    font-family: 'Cormorant Garamond', serif;
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 67px;
+    margin-bottom: 4%;
+    padding-top: 2%;
+}
+
+.special {
+    border: 1px solid black;
+    padding: 0 1%;
+    background-color: yellow;
+}
+
+.topContainer {
+    background: linear-gradient(to top, rgba(128, 0, 128, 0.6), rgba(0, 0, 288, 0.4)), url('https://iversity.org/blog/wp-content/uploads/2013/11/bigstock-Young-Man-Doing-Homework-And-S-45525031.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    opacity: 0.8;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 15%;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 500;
+}
+
+.topContainer hr {
+    width: 25%;
+    margin-left: 45%;
+}
+
+.contentContainer {
+    text-align: center;
+}
+
+.problemDiv h1,
+.solutionDiv h1 {
+    text-transform: uppercase;
+    padding-top: 2%;
+}
+
+.problem,
+.solution {
+    padding: 4%;
+}
+
+.problemIcon {
+    color: grey;
+}
+
+.solutionIcon {
+    color: #ffcd00;
+}
+
+.problemIcon,
+.solutionIcon {
+    font-size: 100px;
+}
+
+.problemExplaination,
+.solutionExplaination {
+    padding: 2% 6%;
+    font-size: 36px;
+    width: 64%;
+    margin-left: 12%;
+}
+
+.demoButton {
+    padding: 5% 26% 15% 26%;
+}
+
+.demoButton p {
+    background-color: purple;
+    padding: 8%;
+    text-align: center;
+    color: white;
+}
+
+.demoButton a {
+    text-decoration: none
+}
+
+.demoButton a:visited {
+    color: inherit;
+}
+
+.demoButton p:hover {
+    cursor: pointer;
+    background-color: yellow;
+    color: black;
+    transition: 0.7s;
+}
+
+@media only screen and (min-width:400px) {
+    .title {
+        font-size: 59px;
+    }
+    .tagline {
+        font-size: 43px;
+    }
+    .problemExplaination,
+    .solutionExplaination {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width:850px) and (min-device-width: 850px) {
+    .title {
+        font-size: 67px;
+    }
+    .tagline {
+        font-size: 50px;
+        padding-top:12%;
+    }
+    .contentContainer {
+        height: 420px;
+        margin-top: 3%;
+    }
+    .problemIcon,
+    .solutionIcon {
+        font-size: 100px;
+        border: none;
+        padding: 0;
+    }
+    .contentContainer {
+        width: 100%;
+        font-size: 20px;
+    }
+    .problemDiv,
+    .solutionDiv {
+        width: 50%;
+        display: inline-block;
+        float: left;
+    }
+    .problemDiv {
+        margin-left: 4%;
+        margin-right: -10%;
+    }
+    .problemExplaination,
+    .solutionExplaination {
+        padding: 0 22%;
+        font-size: 20px;
+        margin-left: 0;
+        width: 64%;
+    }
+    .demoButton {
+        padding: 0 42%;
+        padding-bottom: 4%;
+    }
+}
