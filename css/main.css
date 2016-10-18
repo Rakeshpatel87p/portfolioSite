@@ -271,7 +271,7 @@ body {
     cursor: pointer;
 }
 
-.circle {
+.circleOutline {
     transition-property: border, transform;
     margin: 2%;
     transition: box-shadow 1s ease-out;
@@ -299,7 +299,7 @@ body {
     box-shadow: 1px 1px 6px 2px #52e0e0;
 }
 
-.circle > h3 {
+.circleOutline > h3 {
     margin-top: -7%;
     padding: 48% 0 41% 0;
 }
@@ -410,7 +410,7 @@ body {
 }
 
 @media screen and (max-width: 512px) {
-    .circle {
+    .circleOutline {
         margin-top: 14%;
     }
     
@@ -441,7 +441,7 @@ body {
         margin-top: -1%;
         margin-bottom: 4%;
     }
-    .circle {
+    .circleOutline {
         margin: 0% 2% 2% 2%;
         display: inline-block;
     }

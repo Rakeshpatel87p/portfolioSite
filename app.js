@@ -1,5 +1,4 @@
 $(function() {
-    $(window).resize();
     // Changes background color
     setInterval(updateGradient, 10);
 
@@ -16,63 +15,33 @@ $(function() {
     });
 
     $('.aboutMeLink').click(function() {
-        $('.circle').addClass('rotationEffectOne')
         $("[id='pageNavigation']").hide();
+        $(".circletest").hide(2000);
         $("[class='aboutMeClick']").fadeIn(100);
         $('.aboutMePartI').slideDown(2000).siblings().hide();
         $('#whoAmI')
             .parent()
             .addClass('circleAfterClick')
-        $('#fa-times-aboutMe').show();
+            // $('#fa-times-aboutMe').show();
         $('.wrapper').css('display', 'none');
         $('.aboutMeBlurb').children().children().fadeIn(500);
+        setTimeout(aboutMeCircleAnimation, 5000);
+
+        // Timeouts for changing test of circle
+        setTimeout(function() {
+            $('#whoAmI').text('Motivation').fadeIn()
+        }, 6000);
+        setTimeout(function() {
+            $('#whoAmI').text('Style').fadeIn()
+        }, 13000)
         $('.nameDefault').animate({ 'padding-top': '11%' }, 1000);
-        $('#portfolioCircle').removeClass('circleAfterClick')
-
-    });
-    // Close button for AboutMe section
-    $('#fa-times-aboutMe').click(function() {
-        $('.circle').removeClass('rotationEffectOne');
-        $("[class='aboutMeClick']").hide();
-        $('.aboutMeBlurb').children().slideUp(1500);
-        $('.aboutMeBlurb').children().children().fadeOut(500);
-        $('#fa-times-aboutMe').fadeOut(1000);
-        $('.pageNavigation').children()
-            .removeClass('circleAfterClick');
-        $("[id='pageNavigation']").fadeIn(2000);
     });
 
-    $('#whoAmI').click(function() {
-        $('.aboutMePartI').fadeIn(1000).siblings().hide();
-        $('#whoAmI')
-            .parent()
-            .addClass('circleAfterClick')
-            .siblings()
-            .removeClass('circleAfterClick');
-    });
-
-    $('#whatMovesMe').click(function() {
-        $('.aboutMePartII').fadeIn(1000).siblings().hide();
-        $('#whatMovesMe')
-            .parent()
-            .addClass('circleAfterClick')
-            .siblings()
-            .removeClass('circleAfterClick');
-    });
-
-    $('#otherTidBits').click(function() {
-        $('.aboutMePartIII').fadeIn(1000).siblings().hide();
-        $('#otherTidBits')
-            .parent()
-            .addClass('circleAfterClick')
-            .siblings()
-            .removeClass('circleAfterClick');
-    });
     // Opens Portfolio
     $('.portfolioLink').click(function() {
         $('#portfolioCircle').addClass('circleAfterClick');
         $('.nameDefault').animate({ 'padding-top': '5%' }, 1000);
-        $('.circle').addClass('rotationEffectOne');
+        $('.circleOutline').addClass('rotationEffectOne');
         $('.aboutMeBlurb').children().fadeOut(1000);
         $('.wrapper').css('display', 'flex');
         // $(".trigger").click(function() {
@@ -100,6 +69,40 @@ $(function() {
     });
 
 });
+
+function aboutMeCircleAnimation() {
+    $('.aboutMePartI').fadeOut(1000);
+    // setTimeout(changeCircleColor, 5000)
+    $('.aboutMePartII').delay(1000).slideDown(1500).delay(5000).fadeOut(1000);
+    $('.aboutMePartIII').delay(8500).slideDown(2500).delay(5000).fadeOut(1000);
+    setTimeout(closeAboutMeAnimation, 16000)
+
+}
+
+// Stoplight theme
+function changeCircleColor() {
+    $(".circleOutline").each(function() {
+            $(this).addClass('circleAfterClick');
+        })
+        // var aboutMeClick = $('.aboutMeClick')
+        // var n = 0;
+        // var x = aboutMeClick[n]
+        // // Cannot pull elements like this
+        // x.addClass('circleAfterClick');
+        // n++
+        // console.log('this is n', n)
+}
+
+function closeAboutMeAnimation() {
+    $('.circleOutline').removeClass('rotationEffectOne');
+    $("[class='aboutMeClick']").hide();
+    $('.aboutMeBlurb').children().children().fadeOut(500);
+    $('.aboutMeBlurb').children().slideUp(5000);
+    $('.pageNavigation').children().removeClass('circleAfterClick');
+    $("[id='pageNavigation']").fadeIn(2000);
+    $(".circletest").fadeIn(1000);
+    $('#whoAmI').text('Who Am I');
+}
 
 var colors = new Array(
     [0, 0, 0], [51, 0, 51], [0, 0, 51], [51, 0, 102], [25, 0, 51], [51, 0, 25]);
@@ -144,3 +147,31 @@ function updateGradient() {
 
     }
 }
+
+    // Clicking events for old AboutMe Section
+    // $('#whoAmI').click(function() {
+    //     $('.aboutMePartI').fadeIn(1000).siblings().hide();
+    //     $('#whoAmI')
+    //         .parent()
+    //         .addClass('circleAfterClick')
+    //         .siblings()
+    //         .removeClass('circleAfterClick');
+    // });
+
+    // $('#whatMovesMe').click(function() {
+    //     $('.aboutMePartII').fadeIn(1000).siblings().hide();
+    //     $('#whatMovesMe')
+    //         .parent()
+    //         .addClass('circleAfterClick')
+    //         .siblings()
+    //         .removeClass('circleAfterClick');
+    // });
+
+    // $('#otherTidBits').click(function() {
+    //     $('.aboutMePartIII').fadeIn(1000).siblings().hide();
+    //     $('#otherTidBits')
+    //         .parent()
+    //         .addClass('circleAfterClick')
+    //         .siblings()
+    //         .removeClass('circleAfterClick');
+    // });
