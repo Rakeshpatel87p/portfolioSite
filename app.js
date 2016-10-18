@@ -33,7 +33,7 @@ $(function() {
         }, 6000);
         setTimeout(function() {
             $('#whoAmI').text('Style').fadeIn()
-        }, 15000)
+        }, 17000)
         $('.nameDefault').animate({ 'padding-top': '11%' }, 1000);
     });
 
@@ -73,8 +73,8 @@ $(function() {
 function aboutMeCircleAnimation() {
     $('.aboutMePartI').fadeOut(1000);
     // setTimeout(changeCircleColor, 5000)
-    $('.aboutMePartII').delay(1000).slideDown(1500).delay(7000).fadeOut(1000);
-    $('.aboutMePartIII').delay(10500).slideDown(1500).delay(9000).fadeOut(1000);
+    $('.aboutMePartII').delay(1000).slideDown(1500).delay(9000).fadeOut(1000);
+    $('.aboutMePartIII').delay(12500).slideDown(1500).delay(9000).fadeOut(1000);
     setTimeout(closeAboutMeAnimation, 20000)
 
 }
