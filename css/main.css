@@ -271,6 +271,14 @@ body {
     cursor: pointer;
 }
 
+.pageNavigation a {
+    text-decoration: none
+}
+
+.pageNavigation a:visited{
+    color:inherit;
+}
+
 .circleOutline {
     transition-property: border, transform;
     margin: 2%;
