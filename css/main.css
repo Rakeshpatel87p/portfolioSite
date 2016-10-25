@@ -381,6 +381,10 @@ body {
     height: 20%;
 }
 
+.resumeLink a {
+    padding: 43% 23%;
+}
+
 /*.portfolioNavigation {
     display: none;
     color: orange;
@@ -440,7 +444,7 @@ body {
     }
     .nameDefault {
         font-size: 7em;
-        padding-top: 11%;
+        padding-top: 14%;
         line-height: 120px;
 
     }

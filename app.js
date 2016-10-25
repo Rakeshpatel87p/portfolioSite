@@ -1,11 +1,15 @@
 $(function() {
     // Changes background color
-    setInterval(updateGradient, 10);
+    // setInterval(updateGradient, 10);
+    $(".menu").addClass("active")
+    setTimeout(function(){
+        $(".menu").removeClass("active")
+    }, 5000);
 
     // For top contact menu
     $(".trigger").click(function() {
         $(".menu").toggleClass("active");
-        $('.nameDefault').animate({ 'padding-top': '11%' }, 1000
+        $('.nameDefault').animate({ 'padding-top': '14%' }, 1000
             // ,
             // function() {
             //     $('.nameDefault').animate({ 'padding-top': '11%' }, 5000);
@@ -34,7 +38,7 @@ $(function() {
         setTimeout(function() {
             $('#whoAmI').text('Style').fadeIn()
         }, 17000)
-        $('.nameDefault').animate({ 'padding-top': '11%' }, 1000);
+        $('.nameDefault').animate({ 'padding-top': '14%' }, 1000);
     });
 
     // Opens Portfolio
