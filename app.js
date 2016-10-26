@@ -1,6 +1,6 @@
 $(function() {
     // Changes background color
-    // setInterval(updateGradient, 10);
+    setInterval(updateGradient, 10);
     $(".menu").addClass("active")
     setTimeout(function(){
         $(".menu").removeClass("active")
@@ -19,6 +19,8 @@ $(function() {
     });
 
     $('.aboutMeLink').click(function() {
+        $(".navigationButtons").show().children().eq(0).addClass('circleAfterClick')
+        $('.nameDefault').animate({ 'padding-top': '5%' }, 1000);
         $("[id='pageNavigation']").hide();
         $(".circletest").hide(2000);
         $("[class='aboutMeClick']").fadeIn(100);
@@ -31,14 +33,18 @@ $(function() {
         $('.aboutMeBlurb').children().children().fadeIn(500);
         setTimeout(aboutMeCircleAnimation, 5000);
 
-        // Timeouts for changing test of circle
+        // Timeouts for changing text of circle
         setTimeout(function() {
-            $('#whoAmI').text('Motivation').fadeIn()
+            $('#whoAmI').text('Motivation').fadeIn();
+            $(".navigationButtons").children().removeClass('circleAfterClick');
+            $(".navigationButtons").children().eq(1).addClass('circleAfterClick')
         }, 6000);
         setTimeout(function() {
-            $('#whoAmI').text('Style').fadeIn()
+            $('#whoAmI').text('Style').fadeIn();
+            $(".navigationButtons").children().removeClass('circleAfterClick');
+            $(".navigationButtons").children().eq(2).addClass('circleAfterClick')
         }, 17000)
-        $('.nameDefault').animate({ 'padding-top': '14%' }, 1000);
+        // $('.nameDefault').animate({ 'padding-top': '14%' }, 1000);
     });
 
     // Opens Portfolio
@@ -106,6 +112,7 @@ function closeAboutMeAnimation() {
     $("[id='pageNavigation']").fadeIn(2000);
     $(".circletest").fadeIn(1000);
     $('#whoAmI').text('Who Am I');
+    $(".navigationButtons").hide().children().removeClass('circleAfterClick');
 }
 
 var colors = new Array(

@@ -327,11 +327,21 @@ body {
     margin-left: 12%;
 }
 
+.navigationButtons {
+    display: none;
+}
+
 .aboutMeBlurb {
     font-size: 19px;
     margin-bottom: 2%;
     margin-top: -2%;
 }
+
+.fa-circle-thin {
+    padding: 0% 2%;
+    border: 1px dotted #99e052;
+/*    box-shadow: 1px 1px 3px 1px #52e0e0;
+*/}
 
 .aboutMePartI,
 .aboutMePartII,
