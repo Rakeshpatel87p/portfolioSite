@@ -106,7 +106,6 @@ body {
 
 .menu .btn:hover .fa {
     opacity: 1;
-
 }
 
 .btn-icon:hover {
@@ -219,8 +218,8 @@ body {
     display: table;
     margin: 0 auto;
     color: white;
-/*Really cool background-coloring effect: */
-/*  background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+    /*Really cool background-coloring effect: */
+    /*  background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
 }
@@ -275,8 +274,8 @@ body {
     text-decoration: none
 }
 
-.pageNavigation a:visited{
-    color:inherit;
+.pageNavigation a:visited {
+    color: inherit;
 }
 
 .circleOutline {
@@ -340,8 +339,109 @@ body {
 .fa-circle-thin {
     padding: 0% 2%;
     border: 1px dotted #99e052;
-/*    box-shadow: 1px 1px 3px 1px #52e0e0;
-*/}
+    visibility: none;
+    /*    box-shadow: 1px 1px 3px 1px #52e0e0;
+*/
+}
+
+.stopLightColorsOne {
+    animation: stopLightColorsOne 9.5s;
+}
+
+@keyframes stopLightColorsOne {
+    0% {
+        box-shadow: 1px 1px 3px 3px #006400
+    }
+
+    70% {
+
+        box-shadow: 1px 1px 3px 3px #006400
+
+    }
+
+    80%{
+
+        box-shadow: 1px 1px 3px 3px red
+    }
+
+    85%{
+        box-shadow: none;
+    }
+
+    88%{
+        box-shadow: 1px 1px 3px 3px red
+    }
+
+    100% {
+        box-shadow: 1px 1px 3px 3px red
+    }
+}
+
+.stopLightColorsTwo {
+    animation: stopLightColorsTwo 10.7s;
+}
+
+@keyframes stopLightColorsTwo {
+    0% {
+        box-shadow: 1px 1px 3px 3px #006400
+    }
+
+    70% {
+
+        box-shadow: 1px 1px 3px 3px #006400
+
+    }
+
+    80%{
+
+        box-shadow: 1px 1px 3px 3px red
+    }
+
+    85%{
+        box-shadow: none;
+    }
+
+    88%{
+        box-shadow: 1px 1px 3px 3px red
+    }
+
+    100% {
+        box-shadow: 1px 1px 3px 3px red
+    }
+}
+
+.stopLightColorsThree {
+    animation: stopLightColorsThree 9s;
+}
+
+@keyframes stopLightColorsThree {
+    0% {
+        box-shadow: 1px 1px 3px 3px #006400
+    }
+
+    70% {
+
+        box-shadow: 1px 1px 3px 3px #006400
+
+    }
+
+    80%{
+
+        box-shadow: 1px 1px 3px 3px red
+    }
+
+    85%{
+        box-shadow: none;
+    }
+
+    88%{
+        box-shadow: 1px 1px 3px 3px red
+    }
+
+    100% {
+        box-shadow: 1px 1px 3px 3px red
+    }
+}
 
 .aboutMePartI,
 .aboutMePartII,
@@ -395,10 +495,12 @@ body {
     padding: 43% 23%;
 }
 
+
 /*.portfolioNavigation {
     display: none;
     color: orange;
 }*/
+
 
 /*#navigateBack,
 #navigateForward {
@@ -412,11 +514,13 @@ body {
     padding-top: 2%;
 }
 
+
 /*#navigateBack:hover,
 #navigateForward:hover {
     cursor: pointer;
     opacity: 1;
 }*/
+
 
 /*#blogPopUp {
     display: none;
@@ -428,22 +532,19 @@ body {
 }*/
 
 .blog {
-    display:none;
+    display: none;
 }
 
 @media screen and (max-width: 512px) {
     .circleOutline {
         margin-top: 14%;
     }
-    
     .pin {
         opacity: 1;
     }
-
     .pin p {
         visibility: visible;
     }
-
 }
 
 @media screen and (min-width: 771px) {
@@ -456,7 +557,6 @@ body {
         font-size: 7em;
         padding-top: 14%;
         line-height: 120px;
-
     }
     #jobTitle {
         font-size: 62px;
