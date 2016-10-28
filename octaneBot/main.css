@@ -102,7 +102,6 @@
 
 a {
     text-decoration: none
-    outline: 0;
 }
 
 .demoButton a:visited {
@@ -113,6 +112,10 @@ a {
     cursor: pointer;
     background-color: #cefa87;
     transition: 0.7s;
+}
+
+a {
+    outline: 0;
 }
 
 .fa-github {
