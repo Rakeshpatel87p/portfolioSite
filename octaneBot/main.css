@@ -114,6 +114,14 @@ a {
     transition: 0.7s;
 }
 
+.fa-github {
+    font-size: 3em;
+    color: purple;
+    margin-left: 48%;
+    padding-bottom: 9%;
+
+}
+
 @media only screen and (min-width:550px){
     .titleAndImage {
         margin-left: 7%;

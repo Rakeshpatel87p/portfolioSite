@@ -340,8 +340,6 @@ body {
     padding: 0% 2%;
     border: 1px dotted #99e052;
     visibility: none;
-    /*    box-shadow: 1px 1px 3px 1px #52e0e0;
-*/
 }
 
 .stopLightColorsOne {
@@ -493,43 +491,13 @@ body {
 
 .resumeLink a {
     padding: 43% 23%;
+    color: white;
 }
-
-
-/*.portfolioNavigation {
-    display: none;
-    color: orange;
-}*/
-
-
-/*#navigateBack,
-#navigateForward {
-    display: none;
-    color: orange;
-    opacity: 0.5;
-}*/
 
 .portfolioNavigationCircles {
     display: none;
     padding-top: 2%;
 }
-
-
-/*#navigateBack:hover,
-#navigateForward:hover {
-    cursor: pointer;
-    opacity: 1;
-}*/
-
-
-/*#blogPopUp {
-    display: none;
-    position: absolute;
-    padding: 2%;
-    font-size: 20px;
-    background-color: black;
-    border-radius: 2rem;
-}*/
 
 .blog {
     display: none;

@@ -65,6 +65,14 @@
     transition: 0.7s;
 }
 
+.fa-github {
+    font-size: 3em;
+    color: purple;
+    margin-left: 48%;
+    padding-bottom: 9%;
+
+}
+
 @media only screen and (min-width:850px) and (min-device-width: 850px) {
     .title {
         font-size: 67px;
