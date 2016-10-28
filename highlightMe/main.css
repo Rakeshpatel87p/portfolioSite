@@ -102,6 +102,10 @@
     transition: 0.7s;
 }
 
+a {
+    outline: 0;
+}
+
 .fa-github {
     font-size: 3em;
     color: purple;

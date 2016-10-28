@@ -102,6 +102,7 @@
 
 a {
     text-decoration: none
+    outline: 0;
 }
 
 .demoButton a:visited {
