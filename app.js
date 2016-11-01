@@ -49,15 +49,16 @@ $(function() {
         $('.wrapper').css('display', 'flex');
     });
 
-    $('.pin').hover(function() {
-            $(this).children('p').css('visibility', 'visible')
-            $(this).css('border-radius', '0');
-        },
-        function() {
-            $(this).children('p').css('visibility', 'hidden');
-            $(this).css('border-radius', '2rem')
-        }
-    );
+    // Not good for mobile devices. Consider triggering only on desktop 
+    // $('.pin').hover(function() {
+    //         $(this).children('p').css('visibility', 'visible')
+    //         $(this).css('border-radius', '0');
+    //     },
+    //     function() {
+    //         $(this).children('p').css('visibility', 'hidden');
+    //         $(this).css('border-radius', '2rem')
+    //     }
+    // );
 
     $('.blogLink').mouseover(function(event) {
         $('#blogPopUp').show().fadeOut(2000)
