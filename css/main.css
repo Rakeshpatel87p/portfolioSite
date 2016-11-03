@@ -357,6 +357,8 @@ body {
 .professionalPhotoContainer {
     width: 50%;
     padding-top: 7%;
+    visibility: hidden;
+    height:0;
 }
 
 .professionalPhotoContainer img {
@@ -365,14 +367,20 @@ body {
     margin-left: 47%;
 }
 
-.whoAmIDiv h1 {
+.myStyleDiv {
+    margin-top:-15%;
+}
+
+.whoAmIDiv h1,
+.myStyleDiv h1 {
     color: #99e052;
     border-top: 1px solid #52e0e0;
     padding-top: 5%;
 }
 
 .whoAmIParagraph,
-.techSkillsParagraph {
+.techSkillsParagraph,
+.myStyleParagraph {
     padding: 2% 5%;
     border: 3px dotted #99e052;
     box-shadow: 1px 1px 6px 2px #52e0e0;
@@ -386,96 +394,6 @@ body {
     padding: 0% 2%;
     border: 1px dotted #99e052;
     visibility: none;
-}
-
-.stopLightColorsOne {
-    animation: stopLightColorsOne 9.5s;
-}
-
-@keyframes stopLightColorsOne {
-    0% {
-        box-shadow: 1px 1px 3px 3px #006400
-    }
-    70% {
-        box-shadow: 1px 1px 3px 3px #006400
-    }
-    80% {
-        box-shadow: 1px 1px 3px 3px red
-    }
-    85% {
-        box-shadow: none;
-    }
-    88% {
-        box-shadow: 1px 1px 3px 3px red
-    }
-    100% {
-        box-shadow: 1px 1px 3px 3px red
-    }
-}
-
-.stopLightColorsTwo {
-    animation: stopLightColorsTwo 10.7s;
-}
-
-@keyframes stopLightColorsTwo {
-    0% {
-        box-shadow: 1px 1px 3px 3px #006400
-    }
-    70% {
-        box-shadow: 1px 1px 3px 3px #006400
-    }
-    80% {
-        box-shadow: 1px 1px 3px 3px red
-    }
-    85% {
-        box-shadow: none;
-    }
-    88% {
-        box-shadow: 1px 1px 3px 3px red
-    }
-    100% {
-        box-shadow: 1px 1px 3px 3px red
-    }
-}
-
-.stopLightColorsThree {
-    animation: stopLightColorsThree 9s;
-}
-
-@keyframes stopLightColorsThree {
-    0% {
-        box-shadow: 1px 1px 3px 3px #006400
-    }
-    70% {
-        box-shadow: 1px 1px 3px 3px #006400
-    }
-    80% {
-        box-shadow: 1px 1px 3px 3px red
-    }
-    85% {
-        box-shadow: none;
-    }
-    88% {
-        box-shadow: 1px 1px 3px 3px red
-    }
-    100% {
-        box-shadow: 1px 1px 3px 3px red
-    }
-}
-
-.aboutMePartI,
-.aboutMePartII,
-.aboutMePartIII {
-    padding: 1%;
-    display: none;
-    width: 70%;
-    margin-left: 13%;
-    height: 150px;
-}
-
-.aboutMeParagraphOne,
-.aboutMeParagraphTwo {
-    margin-top: 4%;
 }
 
 .indivPortfolioContainers img {
@@ -564,12 +482,15 @@ body {
         padding-top: 2%;
     }
     .professionalPhotoContainer {
+        visibility: visible;
+        height:auto;
         width: 25%;
         margin-left: 25%;
         margin-top:-15%;
     }
     .whoAmIDiv,
-    .techSkillsDiv {
+    .techSkillsDiv,
+    .myStyleDiv {
         width: 45%;
         margin: auto;
         display: inline-block;
@@ -586,7 +507,8 @@ body {
     }
     
     .whoAmIParagraph,
-    .techSkillsParagraph {
+    .techSkillsParagraph,
+    .myStyleParagraph {
         height: 10rem;
     }
 

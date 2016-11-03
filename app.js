@@ -1,6 +1,6 @@
 $(function() {
     // Changes background color
-    setInterval(updateGradient, 10);
+    // setInterval(updateGradient, 10);
     $(".menu").addClass("active")
     setTimeout(function() {
         $(".menu").removeClass("active")
@@ -15,6 +15,8 @@ $(function() {
 
     $('.aboutMeLink').click(function() {
         $('.nameDefault').animate({ 'padding-top': '5%' }, 1000);
+        // Scroll page to bottom
+        // $("html").css('scrollTop', $(document).height());
         $('.aboutMeCircle').addClass('circleAfterClick')
         $('.wrapper').css('display', 'none');
         $('#portfolioCircle').removeClass('circleAfterClick');
