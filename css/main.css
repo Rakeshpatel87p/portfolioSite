@@ -55,8 +55,9 @@ body {
 .pin p {
     font: 12px/18px Arial, sans-serif;
     margin: 0;
-/*    visibility: hidden;
-*/}
+    /*    visibility: hidden;
+*/
+}
 
 .pin:hover {
     opacity: 1;
@@ -267,7 +268,7 @@ body {
 }
 
 .fa-medium {
-    color:orange;
+    color: orange;
 }
 
 .fa-envelope-o {
@@ -290,7 +291,7 @@ body {
 }
 
 .pageNavigation a:visited {
-    color: inherit;
+    color: white;
 }
 
 .circleOutline {
@@ -339,6 +340,7 @@ body {
 .portfolioLink {
     max-width: 75%;
     margin-left: 12%;
+    color:white;
 }
 
 .navigationButtons {
@@ -349,6 +351,35 @@ body {
     font-size: 19px;
     margin-bottom: 2%;
     margin-top: -2%;
+    display:none;
+}
+
+.professionalPhotoContainer {
+    width: 50%;
+    padding-top: 7%;
+}
+
+.professionalPhotoContainer img {
+    border-radius: 5rem;
+    width: 100%;
+    margin-left: 47%;
+}
+
+.whoAmIDiv h1 {
+    color: #99e052;
+    border-top: 1px solid #52e0e0;
+    padding-top: 5%;
+}
+
+.whoAmIParagraph,
+.techSkillsParagraph {
+    padding: 2% 5%;
+    border: 3px dotted #99e052;
+    box-shadow: 1px 1px 6px 2px #52e0e0;
+}
+
+.techSkillsDiv h1 {
+    color: #52e0e0;
 }
 
 .fa-circle-thin {
@@ -365,26 +396,18 @@ body {
     0% {
         box-shadow: 1px 1px 3px 3px #006400
     }
-
     70% {
-
         box-shadow: 1px 1px 3px 3px #006400
-
     }
-
-    80%{
-
+    80% {
         box-shadow: 1px 1px 3px 3px red
     }
-
-    85%{
+    85% {
         box-shadow: none;
     }
-
-    88%{
+    88% {
         box-shadow: 1px 1px 3px 3px red
     }
-
     100% {
         box-shadow: 1px 1px 3px 3px red
     }
@@ -398,26 +421,18 @@ body {
     0% {
         box-shadow: 1px 1px 3px 3px #006400
     }
-
     70% {
-
         box-shadow: 1px 1px 3px 3px #006400
-
     }
-
-    80%{
-
+    80% {
         box-shadow: 1px 1px 3px 3px red
     }
-
-    85%{
+    85% {
         box-shadow: none;
     }
-
-    88%{
+    88% {
         box-shadow: 1px 1px 3px 3px red
     }
-
     100% {
         box-shadow: 1px 1px 3px 3px red
     }
@@ -431,26 +446,18 @@ body {
     0% {
         box-shadow: 1px 1px 3px 3px #006400
     }
-
     70% {
-
         box-shadow: 1px 1px 3px 3px #006400
-
     }
-
-    80%{
-
+    80% {
         box-shadow: 1px 1px 3px 3px red
     }
-
-    85%{
+    85% {
         box-shadow: none;
     }
-
-    88%{
+    88% {
         box-shadow: 1px 1px 3px 3px red
     }
-
     100% {
         box-shadow: 1px 1px 3px 3px red
     }
@@ -556,6 +563,33 @@ body {
     .contactLinks {
         padding-top: 2%;
     }
+    .professionalPhotoContainer {
+        width: 25%;
+        margin-left: 25%;
+        margin-top:-15%;
+    }
+    .whoAmIDiv,
+    .techSkillsDiv {
+        width: 45%;
+        margin: auto;
+        display: inline-block;
+        vertical-align: bottom;
+        padding:2%;
+    }
+    .whoAmIDiv h1 {
+        border-top: 1px solid #52e0e0;
+    }
+
+    .techSkillsDiv h1 {
+        border-top: 1px solid #99e052;
+        padding-top:5%;
+    }
+    
+    .whoAmIParagraph,
+    .techSkillsParagraph {
+        height: 10rem;
+    }
+
     .aboutMePartI,
     .aboutMePartIII,
     .aboutMePartII {
@@ -565,5 +599,20 @@ body {
     }
     .socialIconsList {
         margin-left: 8%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    
+    .professionalPhotoContainer {
+        width:20%;
+        margin-left:29%;
+        padding-top:3%;
+        margin-top:-10%;
+    }
+
+    .aboutMeContent {
+        width:80%;
+        margin-left:7%;
     }
 }

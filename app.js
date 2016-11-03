@@ -2,7 +2,7 @@ $(function() {
     // Changes background color
     setInterval(updateGradient, 10);
     $(".menu").addClass("active")
-    setTimeout(function(){
+    setTimeout(function() {
         $(".menu").removeClass("active")
     }, 5000);
 
@@ -10,43 +10,41 @@ $(function() {
     $(".trigger").click(function() {
         $(".menu").toggleClass("active");
         $('.nameDefault').animate({ 'padding-top': '17%' }, 1000)
+
     });
 
     $('.aboutMeLink').click(function() {
-        $(".navigationButtons").children().eq(2).removeClass('stopLightColorsThree')
-        $(".navigationButtons").show().children().eq(0).addClass('stopLightColorsOne');
         $('.nameDefault').animate({ 'padding-top': '5%' }, 1000);
-        $("[id='pageNavigation']").hide();
-        $(".circletest").hide(2000);
-        $("[class='aboutMeClick']").fadeIn(100);
-        $('.aboutMePartI').slideDown(2000).siblings().hide();
-        $('#whoAmI')
-            .parent()
-            .addClass('circleAfterClick')
+        $('.aboutMeCircle').addClass('circleAfterClick')
         $('.wrapper').css('display', 'none');
-        $('.aboutMeBlurb').children().children().fadeIn(500);
-        setTimeout(aboutMeCircleAnimation, 10000);
-
-        // Timeouts for changing text of circle
-        setTimeout(function() {
-            $('#whoAmI').text('Tech Skills').fadeIn();
-            $(".navigationButtons").children().eq(0).removeClass('stopLightColorsOne');
-            $(".navigationButtons").children().eq(1).addClass('stopLightColorsTwo')
-        }, 11000);
-        setTimeout(function() {
-            $(".navigationButtons").children().eq(1).removeClass('stopLightColorsTwo');
-            $('#whoAmI').text('Style').fadeIn();
-            $(".navigationButtons").children().eq(2).addClass('stopLightColorsThree')
-        }, 22000)
+        $('#portfolioCircle').removeClass('circleAfterClick');
+        $('.aboutMeBlurb').slideDown(2000);
+        $(".menu").removeClass("active")
+        $(".trigger").click(function() {
+            $(".menu").addClass("active");
+            setTimeout(function() {
+                $(".menu").removeClass("active");
+                $('.nameDefault').animate({ 'padding-top': '5%' }, 2000)
+            }, 5000)
+        });
     });
 
     // Opens Portfolio
     $('.portfolioLink').click(function() {
+        $('.aboutMeBlurb').hide()
+        $(".menu").removeClass("active");
         $('#portfolioCircle').addClass('circleAfterClick');
         $('.nameDefault').animate({ 'padding-top': '5%' }, 1000);
         $('.circleOutline').addClass('rotationEffectOne');
-        $('.aboutMeBlurb').children().fadeOut(1000);
         $('.wrapper').css('display', 'flex');
+        $('.aboutMeCircle').removeClass('circleAfterClick');
+        $(".trigger").click(function() {
+            $(".menu").addClass("active");
+            setTimeout(function() {
+                $(".menu").removeClass("active");
+                $('.nameDefault').animate({ 'padding-top': '5%' }, 2000)
+            }, 5000)
+        });
     });
 
     // Not good for mobile devices. Consider triggering only on desktop 
@@ -65,35 +63,6 @@ $(function() {
     });
 
 });
-
-function aboutMeCircleAnimation() {
-    $('.aboutMePartI').fadeOut(1000);
-    // setTimeout(changeCircleColor, 5000)
-    $('.aboutMePartII').delay(1000).slideDown(1500).delay(9000).fadeOut(1000);
-    $('.aboutMePartIII').delay(12500).slideDown(1500).delay(9000).fadeOut(1000);
-    setTimeout(closeAboutMeAnimation, 21000)
-
-}
-
-// Stoplight theme
-function changeCircleColor() {
-    $(".circleOutline").each(function() {
-            $(this).addClass('circleAfterClick');
-        })
-}
-
-function closeAboutMeAnimation() {
-    $('.circleOutline').removeClass('rotationEffectOne');
-    $("[class='aboutMeClick']").hide();
-    $('.aboutMeBlurb').children().children().fadeOut(500);
-    $('.aboutMeBlurb').children().slideUp(5000);
-    $('.pageNavigation').children().removeClass('circleAfterClick');
-    $("[id='pageNavigation']").fadeIn(2000);
-    $(".circletest").fadeIn(1000);
-    $('#whoAmI').text('Who Am I');
-    $(".navigationButtons").hide().children().removeClass('circleAfterClick');
-    $('.nameDefault').animate({ 'padding-top': '14%' }, 2000)
-}
 
 var colors = new Array(
     [0, 0, 0], [51, 0, 51], [0, 0, 51], [51, 0, 102], [25, 0, 51], [51, 0, 25]);
