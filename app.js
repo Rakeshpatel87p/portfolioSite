@@ -1,6 +1,6 @@
 $(function() {
     // Changes background color
-    // setInterval(updateGradient, 10);
+    setInterval(updateGradient, 10);
     $(".menu").addClass("active");
     setTimeout(function() {
         $(".menu").removeClass("active");
