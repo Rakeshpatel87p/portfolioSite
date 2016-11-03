@@ -1,20 +1,19 @@
 $(function() {
     // Changes background color
-    setInterval(updateGradient, 10);
-    $(".menu").addClass("active")
+    // setInterval(updateGradient, 10);
+    $(".menu").addClass("active");
     setTimeout(function() {
-        $(".menu").removeClass("active")
+        $(".menu").removeClass("active");
     }, 5000);
 
     // For top contact menu
     $(".trigger").click(function() {
         $(".menu").toggleClass("active");
         $('.nameDefault').animate({ 'padding-top': '17%' }, 1000)
-
     });
 
     $('.aboutMeLink').click(function() {
-        $('.nameDefault').animate({ 'padding-top': '5%' }, 1000);
+        $('.nameDefault').animate({ 'padding-top': '7%' }, 1000);
         // Scroll page to bottom
         // $("html").css('scrollTop', $(document).height());
         $('.aboutMeCircle').addClass('circleAfterClick')

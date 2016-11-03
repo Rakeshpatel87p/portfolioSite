@@ -222,9 +222,6 @@ body {
     text-transform: uppercase;
     padding-top: 20%;
     line-height: 96px;
-}
-
-.nameDefault {
     font-weight: 500;
     font-size: 5.3em;
     display: table;
@@ -367,27 +364,37 @@ body {
     margin-left: 47%;
 }
 
+.whoAmIDiv,
+.techSkillsDiv,
+.myStyleDiv {
+    margin: 0% 6%;
+}
+
 .myStyleDiv {
     margin-top:-15%;
 }
 
 .whoAmIDiv h1,
 .myStyleDiv h1 {
-    color: #99e052;
-    border-top: 1px solid #52e0e0;
     padding-top: 5%;
 }
 
 .whoAmIParagraph,
 .techSkillsParagraph,
 .myStyleParagraph {
-    padding: 2% 5%;
+    padding: 5% 5% 0% 5%;
     border: 3px dotted #99e052;
-    box-shadow: 1px 1px 6px 2px #52e0e0;
+}
+.whoAmIDiv h1 {
+    color: #e05252;
 }
 
 .techSkillsDiv h1 {
     color: #52e0e0;
+}
+
+.myStyleDiv h1 {
+    color: #9952e0;
 }
 
 .fa-circle-thin {
@@ -497,12 +504,16 @@ body {
         vertical-align: bottom;
         padding:2%;
     }
+
+    .myStyleDiv{
+        margin-top: -3%;
+    }
     .whoAmIDiv h1 {
-        border-top: 1px solid #52e0e0;
+        border-top: 3px double #52e0e0;
     }
 
     .techSkillsDiv h1 {
-        border-top: 1px solid #99e052;
+        border-top: 3px double #99e052;
         padding-top:5%;
     }
     
@@ -535,6 +546,12 @@ body {
 
     .aboutMeContent {
         width:80%;
-        margin-left:7%;
+        margin-left:10.1%;
+    }
+}
+
+@media only screen and (max-device-width: 450px){
+    .nameDefault{
+            padding-top: 40%;
     }
 }
