@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+.linkHome {
+    padding: 1%;
+}
+
 .title {
     text-align: center;
     font-size: 67px;
@@ -31,7 +35,6 @@
     padding-top: 15%;
     color: white;
     text-transform: uppercase;
-    font-family: 'Abhaya Libre', serif;
     font-weight: 500;
 }
 

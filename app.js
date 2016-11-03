@@ -9,7 +9,7 @@ $(function() {
     // For top contact menu
     $(".trigger").click(function() {
         $(".menu").toggleClass("active");
-        $('.nameDefault').animate({ 'padding-top': '14%' }, 1000)
+        $('.nameDefault').animate({ 'padding-top': '17%' }, 1000)
     });
 
     $('.aboutMeLink').click(function() {
