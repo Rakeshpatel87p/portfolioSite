@@ -2,65 +2,41 @@ $(function() {
     // Changes background color
     setInterval(updateGradient, 10);
     $(".menu").addClass("active");
-    setTimeout(function() {
-        $(".menu").removeClass("active");
-    }, 5000);
-
-    // For top contact menu
-    $(".trigger").click(function() {
-        $(".menu").toggleClass("active");
-        $('.nameDefault').animate({ 'padding-top': '17%' }, 1000)
-    });
 
     $('.aboutMeLink').click(function() {
-        $('.nameDefault').animate({ 'padding-top': '7%' }, 1000);
+        // $('.nameDefault').animate({ 'padding-top': '10%' }, 2000);
         // Scroll page to bottom
         // $("html").css('scrollTop', $(document).height());
         $('.aboutMeCircle').addClass('circleAfterClick')
         $('.wrapper').css('display', 'none');
         $('#portfolioCircle').removeClass('circleAfterClick');
         $('.aboutMeBlurb').slideDown(2000);
-        $(".menu").removeClass("active")
+        // $(".menu").removeClass("active")
         $(".trigger").click(function() {
             $(".menu").addClass("active");
             setTimeout(function() {
                 $(".menu").removeClass("active");
-                $('.nameDefault').animate({ 'padding-top': '5%' }, 2000)
+                $('.nameDefault').animate({ 'padding-top': '10%' }, 2000)
             }, 5000)
         });
     });
 
     // Opens Portfolio
     $('.portfolioLink').click(function() {
+        // $('.nameDefault').animate({ 'padding-top': '10%' }, 2000);
         $('.aboutMeBlurb').hide()
-        $(".menu").removeClass("active");
         $('#portfolioCircle').addClass('circleAfterClick');
-        $('.nameDefault').animate({ 'padding-top': '5%' }, 1000);
         $('.circleOutline').addClass('rotationEffectOne');
         $('.wrapper').css('display', 'flex');
         $('.aboutMeCircle').removeClass('circleAfterClick');
+        // $(".menu").removeClass("active");
         $(".trigger").click(function() {
             $(".menu").addClass("active");
             setTimeout(function() {
                 $(".menu").removeClass("active");
-                $('.nameDefault').animate({ 'padding-top': '5%' }, 2000)
+                $('.nameDefault').animate({ 'padding-top': '10%' }, 2000)
             }, 5000)
         });
-    });
-
-    // Not good for mobile devices. Consider triggering only on desktop 
-    // $('.pin').hover(function() {
-    //         $(this).children('p').css('visibility', 'visible')
-    //         $(this).css('border-radius', '0');
-    //     },
-    //     function() {
-    //         $(this).children('p').css('visibility', 'hidden');
-    //         $(this).css('border-radius', '2rem')
-    //     }
-    // );
-
-    $('.blogLink').mouseover(function(event) {
-        $('#blogPopUp').show().fadeOut(2000)
     });
 
 });
@@ -108,3 +84,25 @@ function updateGradient() {
 
     }
 }
+
+    // Not good for mobile devices. Consider triggering only on desktop 
+    // $('.pin').hover(function() {
+    //         $(this).children('p').css('visibility', 'visible')
+    //         $(this).css('border-radius', '0');
+    //     },
+    //     function() {
+    //         $(this).children('p').css('visibility', 'hidden');
+    //         $(this).css('border-radius', '2rem')
+    //     }
+    // );
+
+    // For opening of page - icons shoot out and disappear in 5 secs
+    // setTimeout(function() {
+    //     $(".menu").removeClass("active");
+    // }, 5000);
+
+    // For top contact menu
+    // $(".trigger").click(function() {
+    //     $(".menu").toggleClass("active");
+    //     $('.nameDefault').animate({ 'padding-top': '32%' }, 1000)
+    // });

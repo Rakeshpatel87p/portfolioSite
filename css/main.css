@@ -15,9 +15,9 @@ body {
 }
 
 .wrapper {
-    width: 70%;
-    margin-left: 15%;
-    flex-direction: row;
+    width: 84%;
+    margin-left: 8%;
+    flex-direction: column;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -25,43 +25,49 @@ body {
     display: none;
 }
 
+.wrapper a {
+    text-decoration: none
+}
+
 .pin {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
-    border-radius: 2rem;
-    flex-grow: 1;
     height: 100%;
     color: white;
-    display: inline-block;
-    border-left: 2px dotted white;
+    border: 2px double white;
+    border-radius: 2rem;
     padding: 15px;
     padding-bottom: 5px;
-    margin-top: -13%;
-    margin-bottom: 5%;
-    opacity: 0.5;
+    margin-bottom: 10%;
+    padding: 6%;
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
 }
 
+.topPin {
+    margin-top: 6%;
+}
+
+.pin h2 {
+    font-size: 3em;
+}
+
 .pin img {
-    width: 100%;
+    width: 85%;
     padding-bottom: 15px;
     margin-bottom: 5px;
 }
 
 .pin p {
-    font: 12px/18px Arial, sans-serif;
+    font-size: 28px;
+    /*    font: 31px/40px Arial, sans-serif;
+*/
     margin: 0;
     /*    visibility: hidden;
 */
-}
-
-.pin:hover {
-    opacity: 1;
-    border-radius: 0;
 }
 
 .absolute-center,
@@ -89,7 +95,6 @@ body {
     background: rgba(255, 255, 255, 0.15);
     opacity: 0;
     z-index: -10;
-    cursor: pointer;
     -webkit-transition: opacity 1s, z-index 0.3s, -webkit-transform 1s;
     transition: opacity 1s, z-index 0.3s, -webkit-transform 1s;
     transition: opacity 1s, z-index 0.3s, transform 1s;
@@ -220,10 +225,10 @@ body {
 .nameDefault {
     fill: none;
     text-transform: uppercase;
-    padding-top: 20%;
-    line-height: 96px;
-    font-weight: 500;
     font-size: 5.3em;
+    line-height: 96px;
+    padding-top: 36%;
+    font-weight: 500;
     display: table;
     margin: 0 auto;
     color: white;
@@ -337,7 +342,7 @@ body {
 .portfolioLink {
     max-width: 75%;
     margin-left: 12%;
-    color:white;
+    color: white;
 }
 
 .navigationButtons {
@@ -348,43 +353,43 @@ body {
     font-size: 19px;
     margin-bottom: 2%;
     margin-top: -2%;
-    display:none;
+    display: none;
 }
 
 .professionalPhotoContainer {
-    width: 50%;
+    width: 41%;
     padding-top: 7%;
-    visibility: hidden;
-    height:0;
 }
 
 .professionalPhotoContainer img {
     border-radius: 5rem;
     width: 100%;
-    margin-left: 47%;
+    margin-left: 73%;
 }
 
 .whoAmIDiv,
 .techSkillsDiv,
 .myStyleDiv {
-    margin: 0% 6%;
+    margin: 0% 6% 4% 6%;
 }
 
-.myStyleDiv {
-    margin-top:-15%;
+.whoAmIDiv,
+.techSkillsDiv {
+    padding-top: 2.5%;
 }
 
 .whoAmIDiv h1,
 .myStyleDiv h1 {
-    padding-top: 5%;
+    padding-top: 8%;
 }
 
 .whoAmIParagraph,
 .techSkillsParagraph,
 .myStyleParagraph {
-    padding: 5% 5% 0% 5%;
+    padding: 5%;
     border: 3px dotted #99e052;
 }
+
 .whoAmIDiv h1 {
     color: #e05252;
 }
@@ -450,19 +455,20 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 512px) {
+
+/*@media only screen and (min-device-width:400px) and (max-device-width: 512px) {
     .circleOutline {
         margin-top: 14%;
     }
     .pin {
-        opacity: 1;
+        opacity: 0;
     }
     .pin p {
         visibility: visible;
     }
-}
+}*/
 
-@media screen and (min-width: 771px) {
+@media only screen and (min-device-width: 771px) and (min-width: 771px) {
     #columns {
         -webkit-column-count: 2;
         -moz-column-count: 2;
@@ -489,11 +495,12 @@ body {
         padding-top: 2%;
     }
     .professionalPhotoContainer {
-        visibility: visible;
-        height:auto;
         width: 25%;
         margin-left: 25%;
-        margin-top:-15%;
+        margin-top: -15%;
+    }
+    .professionalPhotoContainer img {
+        margin-left: 51%;
     }
     .whoAmIDiv,
     .techSkillsDiv,
@@ -502,56 +509,69 @@ body {
         margin: auto;
         display: inline-block;
         vertical-align: bottom;
-        padding:2%;
+        padding: 2%;
     }
-
-    .myStyleDiv{
-        margin-top: -3%;
+    .myStyleDiv {
+        margin-top: -6%;
     }
     .whoAmIDiv h1 {
         border-top: 3px double #52e0e0;
     }
-
     .techSkillsDiv h1 {
-        border-top: 3px double #99e052;
-        padding-top:5%;
+        border-top: 3px double #e05252;
+        padding-top: 8%;
     }
-    
     .whoAmIParagraph,
     .techSkillsParagraph,
     .myStyleParagraph {
         height: 10rem;
     }
-
-    .aboutMePartI,
-    .aboutMePartIII,
-    .aboutMePartII {
-        width: 46%;
-        margin-left: 25%;
-        margin-top: 2%;
+    .wrapper {
+        flex-direction: row;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .pin {
+        flex-grow: 1;
+        display: inline-block;
+        border: none;
+        border-left: 2px dotted white;
+        border-radius: 2rem;
+        margin: 1%;
+    }
+    .pin:hover {
+        border-radius: 0;
+    }
+    .pin h2 {
+        font-size: 1.5em;
+    }
+    .pin img {
+        width: 100%;
+    }
+    .pin p {
+        font: 12px/18px Arial, sans-serif;
     }
     .socialIconsList {
         margin-left: 8%;
     }
 }
 
-@media screen and (min-width: 1000px){
-    
+@media screen and (min-device-width: 1000px) and (min-width: 1000px) {
     .professionalPhotoContainer {
-        width:20%;
-        margin-left:29%;
-        padding-top:3%;
-        margin-top:-10%;
+        width: 20%;
+        margin-left: 29%;
+        padding-top: 3%;
+        margin-top: -10%;
     }
-
     .aboutMeContent {
-        width:80%;
-        margin-left:10.1%;
+        width: 80%;
+        margin-left: 10.1%;
     }
 }
 
-@media only screen and (max-device-width: 450px){
-    .nameDefault{
-            padding-top: 40%;
+
+/*@media only screen and (max-device-width: 450px) {
+    .nameDefault {
+        padding-top: 40%;
     }
-}
+}*/
