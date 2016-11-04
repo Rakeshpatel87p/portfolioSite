@@ -2,7 +2,15 @@ $(function() {
     // Changes background color
     setInterval(updateGradient, 10);
     $(".menu").addClass("active");
-
+    setTimeout(function() {
+        $(".menu").removeClass("active");
+    }, 5000);
+    $(".trigger").click(function() {
+        $(".menu").toggleClass("active");
+        setTimeout(function() {
+            $(".menu").removeClass("active");
+        }, 5000);
+    });
     $('.aboutMeLink').click(function() {
         // $('.nameDefault').animate({ 'padding-top': '10%' }, 2000);
         // Scroll page to bottom
@@ -11,14 +19,14 @@ $(function() {
         $('.wrapper').css('display', 'none');
         $('#portfolioCircle').removeClass('circleAfterClick');
         $('.aboutMeBlurb').slideDown(2000);
-        // $(".menu").removeClass("active")
-        $(".trigger").click(function() {
-            $(".menu").addClass("active");
-            setTimeout(function() {
-                $(".menu").removeClass("active");
-                $('.nameDefault').animate({ 'padding-top': '10%' }, 2000)
-            }, 5000)
-        });
+        $(".menu").removeClass("active")
+            // $(".trigger").click(function() {
+            //     $(".menu").addClass("active");
+            //     setTimeout(function() {
+            //         $(".menu").removeClass("active");
+            //         $('.nameDefault').animate({ 'padding-top': '10%' }, 2000)
+            //     }, 5000)
+            // });
     });
 
     // Opens Portfolio
@@ -29,14 +37,14 @@ $(function() {
         $('.circleOutline').addClass('rotationEffectOne');
         $('.wrapper').css('display', 'flex');
         $('.aboutMeCircle').removeClass('circleAfterClick');
-        // $(".menu").removeClass("active");
-        $(".trigger").click(function() {
-            $(".menu").addClass("active");
-            setTimeout(function() {
-                $(".menu").removeClass("active");
-                $('.nameDefault').animate({ 'padding-top': '10%' }, 2000)
-            }, 5000)
-        });
+        $(".menu").removeClass("active");
+        // $(".trigger").click(function() {
+        //     $(".menu").addClass("active");
+        //     setTimeout(function() {
+        //         $(".menu").removeClass("active");
+        //         $('.nameDefault').animate({ 'padding-top': '10%' }, 2000)
+        //     }, 5000)
+        // });
     });
 
 });
@@ -85,24 +93,24 @@ function updateGradient() {
     }
 }
 
-    // Not good for mobile devices. Consider triggering only on desktop 
-    // $('.pin').hover(function() {
-    //         $(this).children('p').css('visibility', 'visible')
-    //         $(this).css('border-radius', '0');
-    //     },
-    //     function() {
-    //         $(this).children('p').css('visibility', 'hidden');
-    //         $(this).css('border-radius', '2rem')
-    //     }
-    // );
+// Not good for mobile devices. Consider triggering only on desktop 
+// $('.pin').hover(function() {
+//         $(this).children('p').css('visibility', 'visible')
+//         $(this).css('border-radius', '0');
+//     },
+//     function() {
+//         $(this).children('p').css('visibility', 'hidden');
+//         $(this).css('border-radius', '2rem')
+//     }
+// );
 
-    // For opening of page - icons shoot out and disappear in 5 secs
-    // setTimeout(function() {
-    //     $(".menu").removeClass("active");
-    // }, 5000);
+// For opening of page - icons shoot out and disappear in 5 secs
+// setTimeout(function() {
+//     $(".menu").removeClass("active");
+// }, 5000);
 
-    // For top contact menu
-    // $(".trigger").click(function() {
-    //     $(".menu").toggleClass("active");
-    //     $('.nameDefault').animate({ 'padding-top': '32%' }, 1000)
-    // });
+// For top contact menu
+// $(".trigger").click(function() {
+//     $(".menu").toggleClass("active");
+//     $('.nameDefault').animate({ 'padding-top': '32%' }, 1000)
+// });
