@@ -27,6 +27,11 @@ $(function() {
             //         $('.nameDefault').animate({ 'padding-top': '10%' }, 2000)
             //     }, 5000)
             // });
+        setTimeout(function() {
+            $('html, body').animate({ scrollTop: $('.whoAmIDiv').offset().top }, 2000)
+
+        }, 1000)
+
     });
 
     // Opens Portfolio
@@ -45,6 +50,10 @@ $(function() {
         //         $('.nameDefault').animate({ 'padding-top': '10%' }, 2000)
         //     }, 5000)
         // });
+        setTimeout(function() {
+            $('html, body').animate({ scrollTop: $('.pin').offset().top }, 2000)
+
+        }, 500)
     });
 
 });
