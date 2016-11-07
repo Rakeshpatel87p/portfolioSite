@@ -67,6 +67,14 @@
     color: white;
 }
 
+.messageOctaneContainer {
+    width: 75%;
+}
+
+.messageOctaneContainer img {
+    width: 100%;
+}
+
 .botOptions {
     font-size: 22px;
 }
@@ -90,7 +98,16 @@
 }
 
 .heartIcon {
-    color:pink;
+    color: pink;
+}
+
+.demoVideo {
+    text-align:center;
+    margin-top: 5%;
+}
+
+.demoVideo h1 {
+    padding-bottom: 2%;
 }
 
 .demoButton {
@@ -127,10 +144,9 @@ a {
     color: purple;
     margin-left: 48%;
     padding-bottom: 9%;
-
 }
 
-@media only screen and (min-width:550px){
+@media only screen and (min-width:550px) {
     .titleAndImage {
         margin-left: 7%;
     }
@@ -147,7 +163,6 @@ a {
         font-size: 45px;
         padding-top: 9%;
     }
-
     .blurbContainer {
         padding-top: 16%;
     }
@@ -173,13 +188,13 @@ a {
     .blurbContainer {
         font-size: 20px;
     }
-
     .explainationContent h1 {
         font-size: 24px;
     }
     .explainationAction1,
     .explainationAction2 {
         border-right: 1px solid black;
+        vertical-align: top;
     }
     .demoButton {
         padding: 5% 39%;
